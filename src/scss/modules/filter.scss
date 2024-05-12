@@ -1,0 +1,109 @@
+@use "../varibles" as *;
+
+
+.filter {
+
+  // .filter__container
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+  }
+
+  // .filter__group
+
+  &__group {
+    display: flex;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    gap: 12px;
+
+    // .filter__group_choices
+
+    &_choices {
+      gap: 64px;
+    }
+  }
+
+  // .filter__radio
+
+  &__radio {
+    appearance: none;
+    position: absolute;
+    // .filter__input_price
+
+    &_price {
+    }
+  }
+
+  // .filter__label
+
+  &__label {
+   
+    padding: 16px;
+    padding-left: 60px;
+  
+    border-radius: 300px;
+    // padding: 16px;
+    // width: 133px;
+    // height: 72px;
+    background-color: $white;
+
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.3;
+    color: green;
+    cursor: pointer;
+
+    background-size: 40px;
+    background-position: center left 16px;
+    &_flower {
+      
+      background-image: url('/img/flower.png');
+      background-repeat: no-repeat;
+    }
+    &_tots {
+     
+      background-image: url('/img/beeer.png');
+      background-repeat: no-repeat;
+    }
+    &_postcard {
+      background-image: url('/img/envelope.png');
+      background-repeat: no-repeat;
+    }
+  
+  // .filter__label_price
+  
+  &_price {
+    padding-left: 60px;
+  } 
+  }
+
+  // .filter__choices
+
+  &__choices {
+  }
+
+  // .filter__select
+
+  &__select {
+  }
+
+  // .filter__type-list
+
+  &__type-list {
+  }
+
+  // .filter__type-item
+
+  &__type-item {
+  }
+
+  // .filter__type-button
+
+  &__type-button {
+  }
+}
