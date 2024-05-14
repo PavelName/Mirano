@@ -1,0 +1,19 @@
+.goods {
+  padding: 60px 0;
+}
+.goods__title {
+  font-family: "Playfair Display", sans-serif;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  text-align: center;
+  color: #607900;
+  margin-bottom: 40px;
+}
+.goods__list {
+  display: grid;
+  grid-template-columns: repeat(3, 310px);
+  justify-content: center;
+  gap: 24px 20px;
+}/*# sourceMappingURL=goods.css.map */

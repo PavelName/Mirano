@@ -1,0 +1,48 @@
+@use "../varibles" as *;
+
+.card {
+  border-radius: 32px;
+  background-color: $white;
+  min-height: 531px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  // .card__image
+  &__image {
+    object-fit: cover;
+    width: 100%;
+    height: 359px;
+  }
+
+  // .card__content
+
+  &__content {
+    padding: 32px 16px;
+    flex-grow: 1;
+  }
+
+  // .card__title
+
+  &__title {
+  }
+
+  // .card__date
+
+  &__date {
+  }
+
+  // .card__button
+
+  &__button {
+  }
+
+  // .card__price
+
+  &__price {
+  }
+
+  // .card__button-text
+
+  &__button-text {
+  }
+}
