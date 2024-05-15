@@ -2,6 +2,7 @@
 
 .card {
   border-radius: 32px;
+  overflow: hidden;
   background-color: $white;
   min-height: 531px;
   height: 100%;
@@ -19,21 +20,48 @@
   &__content {
     padding: 32px 16px;
     flex-grow: 1;
+
+    display: grid;
+    grid-template-rows: 1fr min-content;
+    grid-template-columns: max-content 1fr;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
   }
 
   // .card__title
 
   &__title {
+    font-weight: 400;
+    font-size: 18px;
+
+    align-self: start;
+    grid-column: 1 / -1;
+
   }
 
   // .card__date
 
   &__date {
+    padding-left: 20px;
+    background-image:url(/img/delivery.svg);
+    background-repeat: no-repeat;
+    background-position: left bottom ;
+    font-size: 14px;
+    //align-self: end;
   }
 
   // .card__button
 
   &__button {
+    border-radius: 32px;
+    padding: 8px 16px;
+    min-width: 120px;
+    height: 39px;
+
+    background: $light-orange;
+
+    color: $white;
   }
 
   // .card__price
@@ -44,5 +72,6 @@
   // .card__button-text
 
   &__button-text {
+    display: none;
   }
 }
