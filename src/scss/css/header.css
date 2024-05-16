@@ -20,7 +20,8 @@
 }
 @media (max-width: 520px) {
   .header__container {
-    grid-template-areas: "logo . cart" "form form form";
+    gap: 24px;
+    grid-template-areas: "logo logo cart" "form form form";
   }
 }
 .header__form {
@@ -37,6 +38,7 @@
 @media (max-width: 768px) {
   .header__form {
     grid-area: form;
+    min-width: 100%;
   }
 }
 .header__input {
@@ -67,10 +69,17 @@
 }
 .header__logo {
   justify-self: center;
+  width: 200px;
 }
 @media (max-width: 768px) {
   .header__logo {
     grid-area: logo;
+  }
+}
+@media (max-width: 520px) {
+  .header__logo {
+    justify-self: start;
+    width: 140px;
   }
 }
 .header__cart-btn {

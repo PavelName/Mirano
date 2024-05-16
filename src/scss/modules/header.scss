@@ -27,8 +27,9 @@
     }
 
     @include mobile {
+      gap: 24px;
       grid-template-areas:
-      "logo . cart"
+      "logo logo cart"
       "form form form";
     }
   }
@@ -44,6 +45,7 @@
 
       @include tablet {
         grid-area: form;
+        min-width: 100%;
       }
   }
 
@@ -85,10 +87,17 @@
 
   &__logo {
     justify-self: center;
+    width: 200px;
 
     @include tablet {
       grid-area:logo ;
     }
+
+    @include mobile {
+      justify-self: start;
+      width: 140px;
+    }
+
   }
 
   // .header__cart-btn
