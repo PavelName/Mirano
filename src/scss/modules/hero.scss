@@ -25,6 +25,14 @@
     text-transform: uppercase;
     text-align: center;
     color: $green;
+
+    @include laptop {
+      @include responsive-font-size(58, 120, 768, 1024);
+    }
+
+    @include tablet {
+      @include responsive-font-size(40, 58, 320, 768);
+    }
   }
 
   // .hero__subtitle
@@ -44,6 +52,14 @@
     line-height: 1.3;
     text-align: right;
     color: $dark;
+
+    @include laptop {
+      @include responsive-font-size(24, 32, 768, 1024);
+    }
+
+    @include tablet {
+      @include responsive-font-size(18, 24, 320, 768);
+    }
   }
 
   // .hero__group-image
@@ -52,14 +68,15 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 26px;
+    gap:calc(24 / 1300 * 100%);
   }
 
   // .hero__image
 
   &__image {
-    object-fit: contain;
+    object-fit: cover;
     width: calc(284 / 1300 * 100%);
+    aspect-ratio: 284 / 352;
     // .hero__image_left
 
     &_left {
@@ -70,6 +87,7 @@
 
     &_center {
       width: calc(680 / 1300 * 100%);
+      aspect-ratio: 580 / 580;
     }
 
     // .hero__image_right
