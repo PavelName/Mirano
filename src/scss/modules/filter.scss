@@ -1,5 +1,5 @@
 @use "../varibles" as *;
-
+@use "../media" as *;
 
 .filter {
 
@@ -9,13 +9,15 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 30px;
+    gap: 32px;
+    flex-wrap: wrap;
   }
 
   // .filter__group
 
   &__group {
     display: flex;
+    flex-wrap: wrap;
     border: 0;
     padding: 0;
     margin: 0;
@@ -25,6 +27,12 @@
 
     &_choices {
       gap: 64px;
+
+      @include mobile 
+      
+      {
+        gap: 40px;
+      }
     }
   }
 
@@ -59,6 +67,16 @@
     background-size: 40px;
     background-position: center left 16px;
     background-repeat: no-repeat;
+    min-height: 72px;
+    display: flex;
+    align-items: center;
+
+    @include mobile {
+      padding: 10px 12px 10px 40px;
+      background-size: 24px;
+      background-position: center left 12px;
+      min-height: 40px;
+    }
 
     &_flower {
       background-image: url('/img/flower.png');
@@ -100,6 +118,12 @@
       height: 8px;
       background: url(/img/Polygon\ 1.svg) no-repeat center/contain;
     }
+  }
+  &__choices-box {
+
+  }
+  &__price {
+
   }
 
   // .filter__type-list

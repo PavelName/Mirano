@@ -2,10 +2,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 30px;
+  gap: 32px;
+  flex-wrap: wrap;
 }
 .filter__group {
   display: flex;
+  flex-wrap: wrap;
   border: 0;
   padding: 0;
   margin: 0;
@@ -13,6 +15,11 @@
 }
 .filter__group_choices {
   gap: 64px;
+}
+@media (max-width: 520px) {
+  .filter__group_choices {
+    gap: 40px;
+  }
 }
 .filter__radio {
   appearance: none;
@@ -31,6 +38,17 @@
   background-size: 40px;
   background-position: center left 16px;
   background-repeat: no-repeat;
+  min-height: 72px;
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 520px) {
+  .filter__label {
+    padding: 10px 12px 10px 40px;
+    background-size: 24px;
+    background-position: center left 12px;
+    min-height: 40px;
+  }
 }
 .filter__label_flower {
   background-image: url("/img/flower.png");

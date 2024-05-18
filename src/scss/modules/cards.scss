@@ -1,4 +1,5 @@
 @use "../varibles" as *;
+@use "../media" as *;
 
 .card {
   border-radius: 32px;
@@ -8,6 +9,11 @@
   height: 100%;
   display: flex;
   flex-direction: column;
+
+  @include mobile {
+    min-height: 380px;
+    border-radius: 20px;
+  }
   // .card__image
   &__image {
     object-fit: cover;
