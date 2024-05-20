@@ -26,24 +26,29 @@
   &__content {
     padding: 32px 16px;
     flex-grow: 1;
-
-    display: grid;
-    grid-template-rows: 1fr min-content;
-    grid-template-columns: max-content 1fr;
-    justify-content: space-between;
-    align-items: center;
+    display: flex;
+    flex-direction: column;
+    
     gap: 16px;
   }
 
   // .card__title
 
   &__title {
+    flex-grow: 1;
     font-weight: 400;
     font-size: 18px;
+  }
 
-    align-self: start;
-    grid-column: 1 / -1;
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    @include mobile {
+      flex-direction: column;
 
+    }
   }
 
   // .card__date
@@ -54,7 +59,10 @@
     background-repeat: no-repeat;
     background-position: left bottom ;
     font-size: 14px;
-    //align-self: end;
+    
+    @include mobile {
+      font-size: 12px;
+    }
   }
 
   // .card__button

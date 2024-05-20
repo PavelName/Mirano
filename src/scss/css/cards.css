@@ -21,18 +21,25 @@
 .card__content {
   padding: 32px 16px;
   flex-grow: 1;
-  display: grid;
-  grid-template-rows: 1fr min-content;
-  grid-template-columns: max-content 1fr;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.card__title {
+  flex-grow: 1;
+  font-weight: 400;
+  font-size: 18px;
+}
+.card__footer {
+  display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 16px;
 }
-.card__title {
-  font-weight: 400;
-  font-size: 18px;
-  align-self: start;
-  grid-column: 1/-1;
+@media (max-width: 520px) {
+  .card__footer {
+    flex-direction: column;
+  }
 }
 .card__date {
   padding-left: 20px;
@@ -40,6 +47,11 @@
   background-repeat: no-repeat;
   background-position: left bottom;
   font-size: 14px;
+}
+@media (max-width: 520px) {
+  .card__date {
+    font-size: 12px;
+  }
 }
 .card__button {
   border-radius: 32px;
