@@ -4,6 +4,10 @@
 .goods {
 padding: 60px 0;
 
+@include tablet {
+  padding: 40px 0;
+}
+
   // .goods__title
 
   &__title {

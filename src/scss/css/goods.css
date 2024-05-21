@@ -1,6 +1,11 @@
 .goods {
   padding: 60px 0;
 }
+@media (max-width: 768px) {
+  .goods {
+    padding: 40px 0;
+  }
+}
 .goods__title {
   font-family: "Playfair Display", sans-serif;
   font-weight: 400;

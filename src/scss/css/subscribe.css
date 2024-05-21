@@ -2,6 +2,16 @@
   padding-top: 80px;
   padding-bottom: 140px;
 }
+@media (max-width: 768px) {
+  .subscribe {
+    padding: 40px 0;
+  }
+}
+@media (max-width: 520px) {
+  .subscribe {
+    padding: 60px 0 100px;
+  }
+}
 .subscribe__title {
   font-family: "Playfair Display", sans-serif;
   font-weight: 400;
@@ -11,6 +21,12 @@
   text-align: center;
   color: #607900;
   margin-bottom: 40px;
+}
+@media (max-width: 768px) {
+  .subscribe__title {
+    font-size: 32px;
+    margin-bottom: 24px;
+  }
 }
 .subscribe__form {
   position: relative;
