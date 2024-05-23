@@ -1,5 +1,20 @@
+@keyframes slideDowm {
+  to {
+    top: 0;
+  }
+}
 .header {
   padding: 32px 0;
+}
+.header_fixed {
+  position: fixed;
+  top: -100%;
+  left: 0;
+  right: 0;
+  z-index: 900;
+  box-shadow: 0 4px 2px -2px #e9ece0;
+  background-color: #e9ece0;
+  animation: slideDowm 0.3s forwards;
 }
 @media (max-width: 520px) {
   .header {
