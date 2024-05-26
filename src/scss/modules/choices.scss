@@ -7,7 +7,12 @@
 
   // .choices__box
 
-  // // &__box {
-  // //   display: none;
-  // }
+   &__box {
+    display: none;
+
+    &_open {
+    display: block;
+    }
+  
+}
 }
