@@ -19,7 +19,7 @@ window.addEventListener('scroll', () => {
   body.style.paddingTop = '0';
  }
 });
-const  adjustElementPosition = (element) => {
+const  adjustElementPosition = (element, count = 0) => {
   const rect = element.getBoundingClientRect();
   const viewportWidth = window.innerWidth;
 
@@ -36,8 +36,12 @@ const  adjustElementPosition = (element) => {
    element.style.right = 'auto';
    element.style.transform = 'translateX(-50%)';
   }
-  
-  
+  const postRect = element.getBoundingClientRect();
+
+  if ((postRect.left < 0 || postRect.right > viewportWidth) && count < 3 ){
+    count++;
+    adjustElementPosition(element, count);
+  }
 }
 
 const choices = document.querySelectorAll('.choices');
