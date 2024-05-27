@@ -1,3 +1,80 @@
 @use "../varibles" as *;
 @use "../media" as *;
 
+.cart {
+  padding-top: 100px;
+  // .cart__container
+
+  &__container {
+  }
+
+  // .cart__header
+
+  &__header {
+  }
+
+  // .cart__title
+
+  &__title {
+  }
+
+  // .cart__close
+
+  &__close {
+  }
+
+  // .cart__dete-delivery
+
+  &__dete-delivery {
+  }
+
+  // .cart__list
+
+  &__list {
+  }
+
+  // .cart__item
+
+  &__item {
+  }
+
+  // .cart__image
+
+  &__image {
+  }
+
+  // .cart__item-title
+
+  &__item-title {
+  }
+
+  // .cart__counter
+
+  &__counter {
+  }
+
+  // .cart__button-btn
+
+  &__button-btn {
+  }
+
+  // .cart__counter-input
+
+  &__counter-input {
+  }
+
+  // .cart__price
+
+  &__price {
+  }
+
+  // .cart__footer
+
+  &__footer {
+  }
+
+  // .cart__order-btn
+
+  &__order-btn {
+  }
+}

@@ -1,6 +1,11 @@
 .goods {
   padding: 60px 0;
 }
+.goods__container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
 @media (max-width: 768px) {
   .goods {
     padding: 40px 0;
