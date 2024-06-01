@@ -33,6 +33,11 @@
   height: 40px;
   border: none;
 }
+@media (max-width: 520px) {
+  .filter__input-price {
+    width: 80px;
+  }
+}
 .filter__label {
   padding: 16px;
   padding-left: 60px;
@@ -94,12 +99,21 @@
   padding: 24px;
   border-radius: 12px;
 }
+.filter__choices-box_type {
+  padding: 16px;
+}
 .filter__price {
   margin: 0;
   padding: 0;
   border: 0;
   display: flex;
   gap: 8px;
+}
+.filter__type-item {
+  margin-bottom: 8px;
+}
+.filter__type-item:last-child {
+  margin-bottom: 0;
 }
 .filter__type-button {
   white-space: nowrap;
@@ -110,6 +124,9 @@
   padding: 8px;
 }
 .filter__type-button:hover {
+  color: #f0a35b;
+}
+.filter__type-button_active {
   color: #d17d2f;
 }
 .filter__radio:checked + .filter__lable {
