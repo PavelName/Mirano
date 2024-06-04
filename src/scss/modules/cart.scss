@@ -4,10 +4,27 @@
 .cart {
   align-self: start;
   padding-top: 100px;
-  display: flex;
+  display: none;
 
   &_open {
-    display: none;
+    display: block;
+  }
+
+  @media (max-width: 1360px) {
+    padding: 0;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    right: 0;
+    bottom: 0;
+
+    overflow-y: auto;
+    height: 100vh;
+  }
+
+  @include mobile {
+    height: auto;
+    right: 14px;
   }
   // .cart__container
 
@@ -20,6 +37,14 @@
     min-height: 778px;
     display: flex;
     flex-direction: column;
+
+    @media (max-width: 1360px) {
+      height: 100%;
+    }
+    @include mobile {
+      min-height:auto;
+      max-width: 292px;
+    }
   }
 
   // .cart__header

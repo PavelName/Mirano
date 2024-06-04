@@ -69,5 +69,17 @@ choices.forEach((choice) => {
   });
 });
 
-// choices__btn
-// choices__box
+
+const headerCartBtn = document.querySelector('.header__cart-btn');
+console.log(headerCartBtn);
+const cartClose = document.querySelector('.cart__close');
+const cart = document.querySelector('.cart');
+console.log(cart)
+
+headerCartBtn.addEventListener('click',() => {
+  cart.classList.toggle('cart_open');
+});
+
+cartClose.addEventListener('click',() => {
+  cart.classList.remove('cart_open');
+});
